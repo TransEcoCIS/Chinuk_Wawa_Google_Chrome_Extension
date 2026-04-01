@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Chinuk Wawa Immersion Tool",
+  "version": "1.0",
+  "description": "Replaces English words with Chinuk Wawa equivalents",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
